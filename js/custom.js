@@ -285,3 +285,15 @@ rangeInput.forEach((input) => {
     }
   });
 });
+
+// form tabs
+$(document).ready(function () {
+  $(".form-tabs li").click(function () {
+    var target = $(this).data("target");
+  
+    $(".form-tabs li").removeClass("active");
+    $(".tab-content").addClass("d-none");
+    $(this).addClass("active");
+    $("#" + target).removeClass("d-none");
+  });
+});

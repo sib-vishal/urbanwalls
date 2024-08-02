@@ -21,16 +21,31 @@
       <?php include 'include/header.php'; ?>
       <div class="heroBanner">
          <div class="bannerContent">
-            <h1 class="large_heading text-white letterSpace1 fontHeading fontWeight700">Your Dream Home, Your Dream Life</h1>
+            <h1 class="large_heading text-white letterSpace1 fontHeading fontWeight700">Your Dream Home, Your Dream Life
+            </h1>
             <div class="tabForm">
-               <ul>
-                  <li class="active">Buy</li>
-                  <li>Rent</li>
-                  <li>New Projects</li>
+               <ul class="form-tabs">
+                  <li class="active" data-target="buy">Buy</li>
+                  <li data-target="rent">Rent</li>
+                  <li data-target="commercial">Commercial</li>
                </ul>
             </div>
-            <div class="formBanner">
-               <div class="formInline">
+            <div class="formBanner home-page ">
+               <div class="formInline home-page">
+                  <div id="commercial" class="d-none tab-content">
+                     <div class="">
+                        <div class="d-flex align-items-center lease-box">
+                           <i class="fa-solid fa-house"></i>
+                           <select name="" id="" class="border-0">
+                              <option value="buy">Lease</option>
+                              <option value="buy">Buy</option>
+                              <option value="buy">Rent</option>
+                           </select>
+                        </div>
+
+                     </div>
+
+                  </div>
                   <div class="locationFeild">
                      <div class="tagLocation">
                         Mumbai
@@ -38,8 +53,14 @@
                      <input type="text" name="city" placeholder="Add location..." />
                   </div>
                   <div class="propertyType">
-                     <p>Flat +1</p>
-                     <i class="fa fa-chevron-down"></i>
+                     <!-- <p>Flat +1</p>
+                     <i class="fa fa-chevron-down"></i> -->
+                     <select name="" id="">
+                        <option value="">Property Type</option>
+                        <option value="">Property Type</option>
+                        <option value="">Property Type</option>
+                        <option value="">Property Type</option>
+                     </select>
                   </div>
                   <div class="budgetFeild">
 
@@ -55,7 +76,8 @@
       </div>
       <section>
          <div class="containerFull">
-            <h4 class="heading fontHeading fontWeight600">We've got <span class="text_primary">properties</span> for everyone</h4>
+            <h4 class="heading fontHeading fontWeight600">We've got <span class="text_primary">properties</span> for
+               everyone</h4>
             <div class="row mt-lg-4">
                <div class="col-lg-3 px-lg-2">
                   <div class="proprtiesItemHome">
@@ -124,7 +146,8 @@
          <div class="containerFull">
             <div class="row">
                <div class="col-lg-7">
-                  <h4 class="heading fontHeading fontWeight600">Why go with <span class="text_primary">Urbanwalls Reality?</span></h4>
+                  <h4 class="heading fontHeading fontWeight600">Why go with <span class="text_primary">Urbanwalls
+                        Reality?</span></h4>
                   <div class="itemBroking mt-lg-5">
                      <div class="iconBroke">
                         <picture>
@@ -134,9 +157,13 @@
                      </div>
                      <div class="rightBroke">
                         <h4 class="sub_heading my-4 fontHeading fontWeight600">Our Values Trust</h4>
-                        <p><strong>Reliable Brokerage Services:</strong> We believe in building up trust with our client through a strengthened relationship based on dependable and reliable brokerage services.</p>
-                        <p class="mt-3"><strong>Expert Guidance:</strong> Our clients repose faith in our expertise to guide them at every step of their real estate journey and make the right decisions.</p>
-                        <p class="mt-3"><strong>Client-Centric Approach:</strong> We have our clients' needs and aspirations foremost, and thus foster a trustworthy and supportive environment where their interests remain uppermost in our minds. </p>
+                        <p><strong>Reliable Brokerage Services:</strong> We believe in building up trust with our client
+                           through a strengthened relationship based on dependable and reliable brokerage services.</p>
+                        <p class="mt-3"><strong>Expert Guidance:</strong> Our clients repose faith in our expertise to
+                           guide them at every step of their real estate journey and make the right decisions.</p>
+                        <p class="mt-3"><strong>Client-Centric Approach:</strong> We have our clients' needs and
+                           aspirations foremost, and thus foster a trustworthy and supportive environment where their
+                           interests remain uppermost in our minds. </p>
                      </div>
                   </div>
                   <div class="itemBroking">
@@ -148,9 +175,14 @@
                      </div>
                      <div class="rightBroke">
                         <h4 class="sub_heading my-4 fontHeading fontWeight600">Transparency</h4>
-                        <p><strong>Clear communication:</strong> We update the clients regarding every single update on property listings, market trends, and transaction process in crystal-clear language.</p>
-                        <p class="mt-3"><strong>Thorough Documentation:</strong> We believe in transparent documentation and reporting so that our clients should be completely aware of every detail pertaining to their real estate transactions from the first consultation to the close.</p>
-                        <p class="mt-3"><strong>Ethical Dealings:</strong> We deal with the best ethical standards to ensure all our dealings with clients are crystal clear, transparent, and rightfully their best interest.</p>
+                        <p><strong>Clear communication:</strong> We update the clients regarding every single update on
+                           property listings, market trends, and transaction process in crystal-clear language.</p>
+                        <p class="mt-3"><strong>Thorough Documentation:</strong> We believe in transparent documentation
+                           and reporting so that our clients should be completely aware of every detail pertaining to
+                           their real estate transactions from the first consultation to the close.</p>
+                        <p class="mt-3"><strong>Ethical Dealings:</strong> We deal with the best ethical standards to
+                           ensure all our dealings with clients are crystal clear, transparent, and rightfully their
+                           best interest.</p>
                      </div>
                   </div>
                   <div class="itemBroking">
@@ -162,9 +194,15 @@
                      </div>
                      <div class="rightBroke">
                         <h4 class="sub_heading my-4 fontHeading fontWeight600">Integrity</h4>
-                        <p><strong>Truthful Representations:</strong> We provide truthful and honest representations of properties so that our clients have realistic expectations of what they are buying or selling.</p>
-                        <p class="mt-3"><strong>Fair Negotiations:</strong> Our respect for integrity extends into our negotiations. We encourage fair and ethical negotiation practices while zealously guarding the best interest of our clients without selling our soul for it.</p>
-                        <p class="mt-3"><strong>Leadership That Inspires Trust:</strong> The tone of integrity set by our leadership leads by example, thereby creating a culture of ethical behavior throughout the organization.</p>
+                        <p><strong>Truthful Representations:</strong> We provide truthful and honest representations of
+                           properties so that our clients have realistic expectations of what they are buying or
+                           selling.</p>
+                        <p class="mt-3"><strong>Fair Negotiations:</strong> Our respect for integrity extends into our
+                           negotiations. We encourage fair and ethical negotiation practices while zealously guarding
+                           the best interest of our clients without selling our soul for it.</p>
+                        <p class="mt-3"><strong>Leadership That Inspires Trust:</strong> The tone of integrity set by
+                           our leadership leads by example, thereby creating a culture of ethical behavior throughout
+                           the organization.</p>
                      </div>
                   </div>
                   <div class="itemBroking">
@@ -176,10 +214,18 @@
                      </div>
                      <div class="rightBroke">
                         <h4 class="sub_heading my-4 fontHeading fontWeight600">Accountability</h4>
-                        <p><strong>Results Responsibility:</strong> We are responsible for what we do and for the decisions we make; hence, we are fully committed to delivering our promises to all clients and stakeholders.</p>
-                        <p class="mt-3"><strong>Transparent Reporting:</strong> It reports transparently on property transactions, market conditions, and performance metrics, thus being accountable to the client.</p>
-                        <p class="mt-3"><strong>Continuous Improvement:</strong> We review our performance regularly and actively seek feedback to constantly improve on the processes that will yield exceptional results and client satisfaction.</p>
-                        <p class="mt-3">For Urbanwalls Realty, trust, transparency, integrity, and accountability are not values; rather, they represent the very bedrock on which the entire business stands and act as guiding principles that will lead to success in real estate brokerage business.</p>
+                        <p><strong>Results Responsibility:</strong> We are responsible for what we do and for the
+                           decisions we make; hence, we are fully committed to delivering our promises to all clients
+                           and stakeholders.</p>
+                        <p class="mt-3"><strong>Transparent Reporting:</strong> It reports transparently on property
+                           transactions, market conditions, and performance metrics, thus being accountable to the
+                           client.</p>
+                        <p class="mt-3"><strong>Continuous Improvement:</strong> We review our performance regularly and
+                           actively seek feedback to constantly improve on the processes that will yield exceptional
+                           results and client satisfaction.</p>
+                        <p class="mt-3">For Urbanwalls Realty, trust, transparency, integrity, and accountability are
+                           not values; rather, they represent the very bedrock on which the entire business stands and
+                           act as guiding principles that will lead to success in real estate brokerage business.</p>
                      </div>
                   </div>
                </div>
@@ -197,7 +243,8 @@
       <section>
          <div class="containerFull">
             <div class="d-flex justify-content-between align-items-center">
-               <h4 class="heading fontHeading fontWeight600">Popular <span class="text_primary">Owner Properties</span></h4>
+               <h4 class="heading fontHeading fontWeight600">Popular <span class="text_primary">Owner Properties</span>
+               </h4>
                <a href="#" class="linkBtn">See all properties <i class="fa fa-arrow-right"></i></a>
             </div>
             <div class="popularSlider">
@@ -215,7 +262,8 @@
                      <div class="propertDetailHome">
                         <p>3 BHK</p>
                         <h4 class="title mt-2 fontHeading fontWeight600">₹40 Lac &nbsp; | &nbsp; 720 sqft</h4>
-                        <p class="text mt-3"><i class="fa fa-map-marker-alt text_primary"></i> Kandivali East, Mumabi</p>
+                        <p class="text mt-3"><i class="fa fa-map-marker-alt text_primary"></i> Kandivali East, Mumabi
+                        </p>
                         <span>Explore <i class="fa fa-arrow-right"></i></span>
                      </div>
                   </a>
@@ -234,7 +282,8 @@
                      <div class="propertDetailHome">
                         <p>3 BHK</p>
                         <h4 class="title mt-2 fontHeading fontWeight600">₹40 Lac &nbsp; | &nbsp; 720 sqft</h4>
-                        <p class="text mt-3"><i class="fa fa-map-marker-alt text_primary"></i> Kandivali East, Mumabi</p>
+                        <p class="text mt-3"><i class="fa fa-map-marker-alt text_primary"></i> Kandivali East, Mumabi
+                        </p>
                         <span>Explore <i class="fa fa-arrow-right"></i></span>
                      </div>
                   </a>
@@ -253,7 +302,8 @@
                      <div class="propertDetailHome">
                         <p>3 BHK</p>
                         <h4 class="title mt-2 fontHeading fontWeight600">₹40 Lac &nbsp; | &nbsp; 720 sqft</h4>
-                        <p class="text mt-3"><i class="fa fa-map-marker-alt text_primary"></i> Kandivali East, Mumabi</p>
+                        <p class="text mt-3"><i class="fa fa-map-marker-alt text_primary"></i> Kandivali East, Mumabi
+                        </p>
                         <span>Explore <i class="fa fa-arrow-right"></i></span>
                      </div>
                   </a>
@@ -272,7 +322,8 @@
                      <div class="propertDetailHome">
                         <p>3 BHK</p>
                         <h4 class="title mt-2 fontHeading fontWeight600">₹40 Lac &nbsp; | &nbsp; 720 sqft</h4>
-                        <p class="text mt-3"><i class="fa fa-map-marker-alt text_primary"></i> Kandivali East, Mumabi</p>
+                        <p class="text mt-3"><i class="fa fa-map-marker-alt text_primary"></i> Kandivali East, Mumabi
+                        </p>
                         <span>Explore <i class="fa fa-arrow-right"></i></span>
                      </div>
                   </a>
@@ -291,7 +342,8 @@
                      <div class="propertDetailHome">
                         <p>3 BHK</p>
                         <h4 class="title mt-2 fontHeading fontWeight600">₹40 Lac &nbsp; | &nbsp; 720 sqft</h4>
-                        <p class="text mt-3"><i class="fa fa-map-marker-alt text_primary"></i> Kandivali East, Mumabi</p>
+                        <p class="text mt-3"><i class="fa fa-map-marker-alt text_primary"></i> Kandivali East, Mumabi
+                        </p>
                         <span>Explore <i class="fa fa-arrow-right"></i></span>
                      </div>
                   </a>
@@ -301,7 +353,8 @@
       </section>
       <section class="bgGrey">
          <div class="containerFull">
-            <h4 class="heading fontWeight600 fontHeading text-center">Featured <span class="text_primary">Projects</span></h4>
+            <h4 class="heading fontWeight600 fontHeading text-center">Featured <span
+                  class="text_primary">Projects</span></h4>
             <div class="row mt-lg-4">
                <div class="col-lg-4">
                   <div class="itemFeatured">
@@ -357,7 +410,8 @@
       <section>
          <div class="containerFull">
             <div class="centerBlock">
-               <h4 class="heading fontHeading text-center fontWeight600">Urbanwall Realty - <span class="text_primary">India</span></h4>
+               <h4 class="heading fontHeading text-center fontWeight600">Urbanwall Realty - <span
+                     class="text_primary">India</span></h4>
                <h3 class="title fontHeading fontWeight500 text-center mt-3">Encyclopedia for all New Projects</h3>
                <div class="row mt-lg-4">
                   <div class="col-lg-4">
@@ -405,7 +459,8 @@
       </section>
       <section class="bgGrey">
          <div class="containerFull">
-            <h4 class="heading fontWeight600 fontHeading text-center">Mandate <span class="text_primary">Projects</span></h4>
+            <h4 class="heading fontWeight600 fontHeading text-center">Mandate <span class="text_primary">Projects</span>
+            </h4>
             <div class="row mt-lg-4">
                <div class="col-lg-4">
                   <div class="itemFeatured">
@@ -471,7 +526,8 @@
                <div class="col-lg-3">
                   <div class="itemCity2">
                      <a href="#">
-                        <h4 class="title fontHeading fontWeight600">Mumbai <i class="fas fa-arrow-up-right-from-square"></i></h4>
+                        <h4 class="title fontHeading fontWeight600">Mumbai <i
+                              class="fas fa-arrow-up-right-from-square"></i></h4>
                         <p class="mt-2">₹9,799 - ₹82,857 per sqft</p>
                         <div class="mt-3 d-flex align-items-center justify-content-between">
                            <p>4.2 <i class="fa fa-star text-warning"></i></p>
@@ -492,7 +548,8 @@
                <div class="col-lg-3">
                   <div class="itemCity2">
                      <a href="#">
-                        <h4 class="title fontHeading fontWeight600">Navi Mumbai <i class="fas fa-arrow-up-right-from-square"></i></h4>
+                        <h4 class="title fontHeading fontWeight600">Navi Mumbai <i
+                              class="fas fa-arrow-up-right-from-square"></i></h4>
                         <p class="mt-2">₹12,799 - ₹98,857 per sqft</p>
                         <div class="mt-3 d-flex align-items-center justify-content-between">
                            <p>4.5 <i class="fa fa-star text-warning"></i></p>
@@ -513,7 +570,8 @@
                <div class="col-lg-3">
                   <div class="itemCity2">
                      <a href="#">
-                        <h4 class="title fontHeading fontWeight600">Pune <i class="fas fa-arrow-up-right-from-square"></i></h4>
+                        <h4 class="title fontHeading fontWeight600">Pune <i
+                              class="fas fa-arrow-up-right-from-square"></i></h4>
                         <p class="mt-2">₹12,799 - ₹98,857 per sqft</p>
                         <div class="mt-3 d-flex align-items-center justify-content-between">
                            <p>4.5 <i class="fa fa-star text-warning"></i></p>
@@ -537,7 +595,8 @@
       <section class="bgGrey">
          <div class="containerFull">
             <div class="d-flex justify-content-between align-items-center">
-               <h4 class="heading fontHeading fontWeight600">Fresh Properties in <span class="text_primary">Mumbai</span></h4>
+               <h4 class="heading fontHeading fontWeight600">Fresh Properties in <span
+                     class="text_primary">Mumbai</span></h4>
                <a href="#" class="linkBtn">See all properties <i class="fa fa-arrow-right"></i></a>
             </div>
             <div class="popularSlider">
@@ -555,7 +614,8 @@
                      <div class="propertDetailHome">
                         <p>3 BHK</p>
                         <h4 class="title mt-2 fontHeading fontWeight600">₹40 Lac &nbsp; | &nbsp; 720 sqft</h4>
-                        <p class="text mt-3"><i class="fa fa-map-marker-alt text_primary"></i> Kandivali East, Mumabi</p>
+                        <p class="text mt-3"><i class="fa fa-map-marker-alt text_primary"></i> Kandivali East, Mumabi
+                        </p>
                         <span>Explore <i class="fa fa-arrow-right"></i></span>
                      </div>
                   </a>
@@ -574,7 +634,8 @@
                      <div class="propertDetailHome">
                         <p>3 BHK</p>
                         <h4 class="title mt-2 fontHeading fontWeight600">₹40 Lac &nbsp; | &nbsp; 720 sqft</h4>
-                        <p class="text mt-3"><i class="fa fa-map-marker-alt text_primary"></i> Kandivali East, Mumabi</p>
+                        <p class="text mt-3"><i class="fa fa-map-marker-alt text_primary"></i> Kandivali East, Mumabi
+                        </p>
                         <span>Explore <i class="fa fa-arrow-right"></i></span>
                      </div>
                   </a>
@@ -593,7 +654,8 @@
                      <div class="propertDetailHome">
                         <p>3 BHK</p>
                         <h4 class="title mt-2 fontHeading fontWeight600">₹40 Lac &nbsp; | &nbsp; 720 sqft</h4>
-                        <p class="text mt-3"><i class="fa fa-map-marker-alt text_primary"></i> Kandivali East, Mumabi</p>
+                        <p class="text mt-3"><i class="fa fa-map-marker-alt text_primary"></i> Kandivali East, Mumabi
+                        </p>
                         <span>Explore <i class="fa fa-arrow-right"></i></span>
                      </div>
                   </a>
@@ -612,7 +674,8 @@
                      <div class="propertDetailHome">
                         <p>3 BHK</p>
                         <h4 class="title mt-2 fontHeading fontWeight600">₹40 Lac &nbsp; | &nbsp; 720 sqft</h4>
-                        <p class="text mt-3"><i class="fa fa-map-marker-alt text_primary"></i> Kandivali East, Mumabi</p>
+                        <p class="text mt-3"><i class="fa fa-map-marker-alt text_primary"></i> Kandivali East, Mumabi
+                        </p>
                         <span>Explore <i class="fa fa-arrow-right"></i></span>
                      </div>
                   </a>
@@ -631,7 +694,8 @@
                      <div class="propertDetailHome">
                         <p>3 BHK</p>
                         <h4 class="title mt-2 fontHeading fontWeight600">₹40 Lac &nbsp; | &nbsp; 720 sqft</h4>
-                        <p class="text mt-3"><i class="fa fa-map-marker-alt text_primary"></i> Kandivali East, Mumabi</p>
+                        <p class="text mt-3"><i class="fa fa-map-marker-alt text_primary"></i> Kandivali East, Mumabi
+                        </p>
                         <span>Explore <i class="fa fa-arrow-right"></i></span>
                      </div>
                   </a>
@@ -642,7 +706,8 @@
       <section>
          <div class="containerFull">
             <p class="textSub text-center">From The Blog</p>
-            <h3 class="heading text-center text_primary fontHeading fontWeight600">Latest News &<br /> Articles From the Blog</h3>
+            <h3 class="heading text-center text_primary fontHeading fontWeight600">Latest News &<br /> Articles From the
+               Blog</h3>
             <div class="blogSlider iconSlider">
                <div class="itemBlog">
                   <div class="innerBlog">
@@ -659,7 +724,8 @@
                                  <i class="fa fa-user"></i>
                               </div>
                               <p>by webdesk</p>
-                              <h4 class="small_heading fontHeading mt-3">5 Essential Tips for Managing Over whelming Situations </h4>
+                              <h4 class="small_heading fontHeading mt-3">5 Essential Tips for Managing Over whelming
+                                 Situations </h4>
                            </div>
                         </div>
                         <div class="bottomBtn">
@@ -684,7 +750,8 @@
                                  <i class="fa fa-user"></i>
                               </div>
                               <p>by webdesk</p>
-                              <h4 class="small_heading fontHeading mt-3">5 Essential Tips for Managing Over whelming Situations </h4>
+                              <h4 class="small_heading fontHeading mt-3">5 Essential Tips for Managing Over whelming
+                                 Situations </h4>
                            </div>
                         </div>
                         <div class="bottomBtn">
@@ -709,7 +776,8 @@
                                  <i class="fa fa-user"></i>
                               </div>
                               <p>by webdesk</p>
-                              <h4 class="small_heading fontHeading mt-3">5 Essential Tips for Managing Over whelming Situations </h4>
+                              <h4 class="small_heading fontHeading mt-3">5 Essential Tips for Managing Over whelming
+                                 Situations </h4>
                            </div>
                         </div>
                         <div class="bottomBtn">
@@ -734,7 +802,8 @@
                                  <i class="fa fa-user"></i>
                               </div>
                               <p>by webdesk</p>
-                              <h4 class="small_heading fontHeading mt-3">5 Essential Tips for Managing Over whelming Situations </h4>
+                              <h4 class="small_heading fontHeading mt-3">5 Essential Tips for Managing Over whelming
+                                 Situations </h4>
                            </div>
                         </div>
                         <div class="bottomBtn">

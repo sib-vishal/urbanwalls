@@ -379,39 +379,40 @@ section {
   -ms-border-radius: 10px;
   -o-border-radius: 10px;
 }
-.formInline {
-  display: flex;
-  flex-direction: column;
+.property-enquiry-form {
+  .formInline {
+    display: flex;
+    flex-direction: column;
 
-  /* align-items: center; */
-  padding:15px 10px;
-  background: #fff;
-  border-radius: 5px;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  -ms-border-radius: 5px;
-  -o-border-radius: 5px;
-}
-.tagLocation {
-  padding: 10px 20px;
-  background: #fbd1d3;
-  border-radius: 40px;
-  -webkit-border-radius: 40px;
-  -moz-border-radius: 40px;
-  -ms-border-radius: 40px;
-  -o-border-radius: 40px;
-  font-size: 14px;
-}
-.locationFeild {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-   padding: 10px;
-  position: relative;
-  border-bottom: 1px solid #b6b6b6;
-  width: 100%;
-}
-/* .locationFeild:after{
+    /* align-items: center; */
+    padding: 15px 0px 25px 0px;
+    background: #fff;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+  }
+  .tagLocation {
+    padding: 10px 20px;
+    background: #fbd1d3;
+    border-radius: 40px;
+    -webkit-border-radius: 40px;
+    -moz-border-radius: 40px;
+    -ms-border-radius: 40px;
+    -o-border-radius: 40px;
+    font-size: 14px;
+  }
+  .locationFeild {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    position: relative;
+    border-bottom: 1px solid #b6b6b6;
+    width: 100%;
+  }
+  /* .locationFeild:after{
     content: "\f3c5";
     position: absolute;
     font-family: var(--fa-style-family, "Font Awesome 6 Free");
@@ -420,27 +421,33 @@ section {
     color: var(--primary-color);
     font-size: 17px;
   } */
-.locationFeild input {
-  /* margin-left: 15px; */
-  border: none;
-  font-weight: 500;
-  font-size: 15px;
-  width: 100%;
-}
-.propertyType {
-  /* width: 250px; */
-  border-bottom: 1px solid #b6b6b6;
-  display: flex;
- 
-  justify-content: space-between;
-  padding: 10px 10px;
-  /* padding-left: 50px; */
-  position: relative;
-}
-.propertyType p i{
-  margin-right: 5px;
-}
-/* .propertyType:before{
+  .locationFeild i,
+  .propertyType p i,
+  .budgetFeild p i {
+    color: var(--primary-color);
+  }
+
+  .locationFeild input {
+    /* margin-left: 15px; */
+    border: none;
+    font-weight: 500;
+    font-size: 15px;
+    width: 100%;
+  }
+  .propertyType {
+    /* width: 250px; */
+    border-bottom: 1px solid #b6b6b6;
+    display: flex;
+
+    justify-content: space-between;
+    padding: 10px 10px;
+    /* padding-left: 50px; */
+    position: relative;
+  }
+  .propertyType p i {
+    margin-right: 5px;
+  }
+  /* .propertyType:before{
   content: "\f015";
   position: absolute;
   top: 8px;
@@ -449,26 +456,26 @@ section {
   left: 20px;
   color: var(--primary-color);
 } */
-.propertyType p {
-  font-weight: 500;
-  color: #666;
-}
-.propertyType i {
-  font-size: 14px;
-  color: #666;
-}
-.budgetFeild {
-  /* width: 200px; */
-  display: flex;
-  justify-content: space-between;
-  padding: 10px 10px;
-  /* padding-left: 50px; */
-  position: relative;
-}
-.budgetFeild p i{
-  margin-right: 5px;
-}
-/* .budgetFeild:before{
+  .propertyType p {
+    font-weight: 500;
+    color: #666;
+  }
+  .propertyType i {
+    font-size: 14px;
+    color: #666;
+  }
+  .budgetFeild {
+    /* width: 200px; */
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 10px;
+    /* padding-left: 50px; */
+    position: relative;
+  }
+  .budgetFeild p i {
+    margin-right: 5px;
+  }
+  /* .budgetFeild:before{
   content: "\e1bc";
   position: absolute;
   top: 8px;
@@ -477,14 +484,16 @@ section {
   left: 20px;
   color: var(--primary-color);
 } */
-.budgetFeild p {
-  font-weight: 500;
-  color: #666;
+  .budgetFeild p {
+    font-weight: 500;
+    color: #666;
+  }
+  .budgetFeild i {
+    font-size: 14px;
+    color: #666;
+  }
 }
-.budgetFeild i {
-  font-size: 14px;
-  color: #666;
-}
+
 .formBtn {
   width: calc(100% - 800px);
   padding: 0 10px;
@@ -1448,4 +1457,113 @@ input[type="range"]::-moz-range-thumb {
 }
 .checkListIcon ul li input:checked ~ label:after {
   background: var(--primary-color);
+}
+.btnfull:after {
+  width: calc(100% + 10px) !important;
+}
+
+/* HOME PAGE FORM */
+.home-page {
+  .formInline {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background: #fff;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+  }
+  .tagLocation {
+    padding: 10px 20px;
+    background: #fbd1d3;
+    border-radius: 40px;
+    -webkit-border-radius: 40px;
+    -moz-border-radius: 40px;
+    -ms-border-radius: 40px;
+    -o-border-radius: 40px;
+    font-size: 14px;
+  }
+  .locationFeild {
+    display: flex;
+    padding-left: 30px;
+    position: relative;
+    border-right: 1px solid #b6b6b6;
+    width: 350px;
+  }
+  .tagLocation:after {
+    content: "\f3c5";
+    position: absolute;
+    font-family: var(--fa-style-family, "Font Awesome 6 Free");
+    font-weight: var(--fa-style, 900);
+    left: 8px;
+    color: var(--primary-color);
+    font-size: 17px;
+  }
+  .locationFeild input {
+    margin-left: 15px;
+    border: none;
+    font-weight: 500;
+    font-size: 15px;
+  }
+  .propertyType {
+    width: 250px;
+    border-right: 1px solid #b6b6b6;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    padding-left: 50px;
+    position: relative;
+  }
+  .propertyType:before {
+    content: "\f015";
+    position: absolute;
+    top: 8px;
+    font-family: var(--fa-style-family, "Font Awesome 6 Free");
+    font-weight: var(--fa-style, 900);
+    left: 20px;
+    color: var(--primary-color);
+  }
+  .propertyType p {
+    font-weight: 500;
+    color: #666;
+  }
+  .propertyType i {
+    font-size: 14px;
+    color: #666;
+  }
+  .budgetFeild {
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    padding-left: 50px;
+    position: relative;
+  }
+  .budgetFeild:before {
+    content: "\e1bc";
+    position: absolute;
+    top: 8px;
+    font-family: var(--fa-style-family, "Font Awesome 6 Free");
+    font-weight: var(--fa-style, 900);
+    left: 20px;
+    color: var(--primary-color);
+  }
+  .budgetFeild p {
+    font-weight: 500;
+    color: #666;
+  }
+  .budgetFeild i {
+    font-size: 14px;
+    color: #666;
+  }
+  .lease-box{
+    padding: 10px ;
+    gap: 10px;
+    border-right: 1px solid #b6b6b6;
+  }
+  .lease-box i{
+    color: var(--primary-color);
+  }
 }

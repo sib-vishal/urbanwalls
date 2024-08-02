@@ -75,31 +75,35 @@
                 <div class="row">
                     <div class="col-lg-3">
                         <div class="sidebarProprty bg-white p-3">
-                        <div class="propertyHeader p-3 border-bottom">
+                            <div class="propertyHeader p-3 ">
                                 <h3 class="fontHeading text_primary small_heading">Search Property</h3>
                             </div>
-                            <div class="formInline border">
-                                <div class="locationFeild ">
-                                    <i class="fa-solid fa-location-dot"></i>
+                            <div class="property-enquiry-form">
+                                <div class="formInline">
+                                    <div class="locationFeild ">
+                                        <i class="fa-solid fa-location-dot"></i>
 
-                                    <!-- <div class="tagLocation">
+                                        <!-- <div class="tagLocation">
                                             Mumbai
                                         </div> -->
-                                    <input type="text" name="city" placeholder="Add location...">
-                                </div>
-                                <div class="propertyType">
-                                    <p><i class="fa-solid fa-house"></i> Flat +1</p>
-                                    <i class="fa fa-chevron-down"></i>
-                                </div>
-                                <div class="budgetFeild">
+                                        <input type="text" name="city" placeholder="Add location...">
+                                    </div>
+                                    <div class="propertyType">
+                                        <p><i class="fa-solid fa-house"></i> Flat +1</p>
+                                        <i class="fa fa-chevron-down"></i>
+                                    </div>
+                                    <div class="budgetFeild">
 
-                                    <p><i class="fa-solid fa-indian-rupee-sign"></i> Budget </p>
-                                    <i class="fa fa-chevron-down"></i>
-                                </div>
-                                <div class="formBtn w-100 mt-2">
-                                    <button class="btnTheme w-100"><i class="fa fa-search"></i> Search</button>
+                                        <p><i class="fa-solid fa-indian-rupee-sign"></i> Budget </p>
+                                        <i class="fa fa-chevron-down"></i>
+                                    </div>
+                                    <div class="formBtn w-100 mt-2">
+                                        <button class="btnTheme btnfull w-100"><i class="fa fa-search"></i>
+                                            Search</button>
+                                    </div>
                                 </div>
                             </div>
+
                             <div class="propertyHeader p-3 border-bottom">
                                 <h3 class="fontHeading text_primary small_heading">Filter</h3>
                             </div>
@@ -193,6 +197,70 @@
                             </div>
                             <div class="filterItem mt-lg-4 mt-3">
                                 <div class="filterHeader d-flex align-items-center justify-content-between">
+                                    <h5 class="title fontHeading">Lift</h5>
+                                </div>
+                                <div class="listBhk mt-3">
+                                    <div class="radioList">
+                                        <ul>
+                                            <li>
+                                                <input type="radio" name="lift" id="lift-yes" />
+                                                <label for="lift-yes">Yes</label>
+                                            </li>
+                                            <li>
+                                                <input type="radio" name="lift" id="lift-no" />
+                                                <label for="lift-no">No</label>
+                                            </li>
+
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="filterItem mt-lg-4 mt-3">
+                                <div class="filterHeader d-flex align-items-center justify-content-between">
+                                    <h5 class="title fontHeading">Parking</h5>
+                                </div>
+                                <div class="listBhk mt-3">
+                                    <div class="radioList">
+                                        <ul>
+                                            <li>
+                                                <input type="radio" name="parking" id="parking-yes" />
+                                                <label for="parking-yes">Yes</label>
+                                            </li>
+                                            <li>
+                                                <input type="radio" name="parking" id="parking-no" />
+                                                <label for="parking-no">No</label>
+                                            </li>
+
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="filterItem mt-lg-4 mt-3">
+                                <div class="filterHeader d-flex align-items-center justify-content-between">
+                                    <h5 class="title fontHeading">Furnished</h5>
+                                </div>
+                                <div class="listBhk mt-3">
+                                    <div class="radioList">
+                                        <ul>
+                                            <li>
+                                                <input type="radio" name="furnished" id="furnished-furnished" />
+                                                <label for="furnished-furnished">Furnished</label>
+                                            </li>
+                                            <li>
+                                                <input type="radio" name="furnished" id="furnished-semifurnished" />
+                                                <label for="furnished-semifurnished">Semifurnished</label>
+                                            </li>
+                                            <li>
+                                                <input type="radio" name="furnished" id="furnished-unfurnished " />
+                                                <label for="furnished-unfurnished ">Unfurnished</label>
+                                            </li>
+
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- <div class="filterItem mt-lg-4 mt-3">
+                                <div class="filterHeader d-flex align-items-center justify-content-between">
                                     <h5 class="title fontHeading">Preferred Tenants</h5>
                                 </div>
                                 <div class="listBhk mt-3">
@@ -240,7 +308,7 @@
                                         </ul>
                                     </div>
                                 </div>
-                            </div>
+                            </div> -->
                         </div>
                     </div>
                     <div class="col-lg-9">
