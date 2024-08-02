@@ -1,0 +1,280 @@
+@media only screen and (max-width: 767px){
+    p{
+        font-size: 14px;
+    }
+    .containerFull{
+        padding:0 15px;
+    }
+    .header{
+        padding:0px 0;
+    }
+    .centerLogo img{
+        transform: translate(0);
+    }
+    .centerLogo {
+        width: 160px;
+    }
+    .heroBlock img{
+        height: 60vh;
+    }
+    .stricky-fixed .centerLogo{
+        width:110px;
+    }
+    .large_heading{
+        font-size: 26px;
+        line-height: 35px;
+    }
+    .small_heading{
+        font-size: 20px;
+    }
+    section{
+        overflow:inherit;
+        padding:40px 0;
+    }
+    .heading{
+        font-size: 21px;
+        line-height: 31px;
+    }
+    .sub_heading{
+        font-size: 18px;
+        line-height: 28px;
+    }
+    .btnMenu{
+        background: none;
+        border:none;
+        color: #000;
+        font-size: 18px;
+    }
+    .title{
+        font-size: 15px;
+    }
+    .stricky-fixed .btnMenu{
+        color: #000;
+    }
+    .offcanvas-end {
+        width: 320px;
+    }
+    .offcanvas-body {
+        overflow-x: hidden;
+        padding: 0rem 1rem;
+    }
+    .innerMenu ul li ul{
+        display: none;
+    }
+    .innerMenu ul li a {
+        color: #222;
+        display: inline-flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        font-size: 14px;
+        padding: 10px;
+        font-weight: 600;
+    }
+    .innerMenu ul li a i{
+        font-size: 12px;
+    }
+    .innerMenu ul li ul li a{
+        font-size: 13px;
+    }
+    .innerMenu ul li a:hover{
+        color: var(--primary-color);
+    }
+    .rightAbout{
+        margin-top: 20px;
+    }
+    .innerWork img{
+        height: 300px;
+    }
+    .emailIconRight{
+        display: none;
+    }
+    .rightContact{
+        margin-bottom: 30px;
+    }
+    .rightAbout p{
+        text-align:justify;
+    }
+    .followUs {
+        margin-top: 30px;
+        border-top: 1px solid #e0e0e0;
+        padding-top: 30px;
+        padding-left: 15px;
+    }
+    .followUs ul {
+        display: flex;
+        margin-top: 10px;
+    }
+    .followUs ul li a {
+        display: inline-block;
+        padding: 10px;
+        font-size: 18px;
+        color: #333;
+    }
+    .leftBanner{
+        padding-top: 0px;
+    }
+    .btnTheme{
+        font-size: 13px;
+        padding: 12px 25px;
+    }
+    .btnCall{
+        font-weight: 600;
+        color: #fff;
+        font-size: 16px;
+    }
+    .heroBanner{
+        height: 60vh;
+    }
+    .bannerText{
+        height: 59vh;
+    }
+    .leftAb p a{
+        display: inline-block;
+    }
+    .menuBtn{
+        position: absolute;
+        bottom: 15px;
+        left: 0px;
+        width: 100%;
+        padding:0 15px;
+    }
+    .leftBg{
+        display: none;
+    }
+    .rightConfidence{
+        padding: 20px 0 0 0;
+    }
+    .btnBlock a{
+        width: 100%;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+    .linkBtn{
+        font-size: 15px;
+    }
+    .btnBanner{
+        font-size: 13px;
+        padding: 12px 25px; 
+    }
+    .copyright p{
+        font-size: 13px;
+    }
+    #cpatchaSubmitBtn{
+        margin-top: 20px;
+    }
+    .whatChat{
+        display: none;
+    }
+    .listBanner ul, .innerReview{
+        flex-wrap: wrap;
+    }
+    .rightUser{
+        width: 100%;
+        border-left: none;
+        border-top: 1px solid #e0e0e0;
+        margin-top: 10px;
+        padding-top: 10px;
+    }
+    .innerReview{
+        justify-content: center;
+    }
+    .formRightBanner{
+        padding:30px 25px;
+        margin-top: 66px;
+    }
+    .documentItemPopup{
+        border-right: none;
+    }
+    .formItem p{
+        font-size: 11px;
+    }
+    .iconProcess {
+        width:60px;
+        height: 60px;
+        padding: 11px;
+    }
+    .rightProcess{
+        width: calc(100% - 70px);
+    }
+    .leftProces{
+        padding-right: 0px;
+    }
+    .leftProces:after{
+        left: 28px;
+    }
+    .bodyPrice{
+        padding: 0 22px 30px;
+    }
+    .iconLeftAc{
+        width: 60px;
+        height: 60px;
+    }
+    .leftRequire, .centerContent{
+        margin-top: 20px;
+    }
+    .itemAdvantage{
+        margin-bottom: 20px;
+        height: auto;
+    }
+    .itemFaq{
+        margin-bottom: 18px;
+    }
+    .sliderTestimonial{
+        margin-top: 40px;
+    }
+    .rightContact{
+        padding-left: 0px;
+    }
+    .itemFooter{
+        margin-top: 15px;
+    }
+    .inlineFooter{
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+    }
+    .copyRight p a{
+        display: inline-block;
+    }
+    .footer{
+        padding-bottom: 40px;
+    }
+    .formItem{
+        margin: 10px 0
+    }
+    .textHeight{
+        height: 80px !important;
+    }
+    .faqHeader h4{
+        font-size: 16px;
+    }
+}
+
+
+
+
+
+@media (min-width: 768px) and (max-width: 990px) {
+
+}
+@media (min-width: 1024px){
+   
+}
+@media (min-width: 1280px){
+    .containerFull{
+        max-width: 1260px;
+        margin: 0 auto;
+    }
+}
+@media (min-width: 1366px){
+    .containerFull{
+        max-width: 1280px;
+        margin: 0 auto;
+    }
+}
+@media (min-width: 1200px){
+    .container{
+        max-width: 1080px;
+    }
+}
