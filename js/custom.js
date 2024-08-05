@@ -290,10 +290,67 @@ rangeInput.forEach((input) => {
 $(document).ready(function () {
   $(".form-tabs li").click(function () {
     var target = $(this).data("target");
-  
+
     $(".form-tabs li").removeClass("active");
     $(".tab-content").addClass("d-none");
     $(this).addClass("active");
     $("#" + target).removeClass("d-none");
+  });
+});
+
+// home form
+$(document).ready(function () {
+  $(".propertyType").click(function () {
+    $(".property-type-dropdown").toggleClass("show-dropdown");
+
+    if (!$(".property-type-dropdown").hasClass("show-dropdown")) {
+      $(".price_filter").removeClass("show-dropdown");
+    }
+  });
+
+  $("#area_filter").click(function () {
+    $(".price_filter").toggleClass("show-dropdown");
+  });
+  $(".other_properties_filter").click(function () {
+    $(".other_properties_filter_option").toggleClass("d-none ");
+  });
+  $(".residential_filter").click(function () {
+    $(".residential_options").toggleClass("d-none ");
+  });
+  $(".commercial_filter ").click(function () {
+    $(".commercial_filter_option").toggleClass("d-none ");
+  });
+
+  // budget
+  $(".budget-btn ").click(function () {
+    $(".budget").toggleClass("show-dropdown");
+  });
+  $("#max-budget").focus(function () {
+    $(".min-budget-option ").addClass("d-none");
+    $(".max-budget-option ").removeClass("d-none");
+  });
+  $("#min-budget").focus(function () {
+    $(".min-budget-option ").removeClass("d-none");
+    $(".max-budget-option ").addClass("d-none");
+  });
+
+  $(".min-budget-option p").click(function () {
+    var selectedValue = $(this).data("value");
+    console.log(selectedValue);
+    $("#min-budget").val(selectedValue);
+    $(".min-budget-option").addClass("d-none");
+    $(".max-budget-option").removeClass("d-none");
+  });
+  $(".max-budget-option p").click(function () {
+    var selectedValue = $(this).data("value");
+
+    $("#max-budget").val(selectedValue);
+    $(".max-budget-option").addClass("d-none");
+    if (
+      $("#min-budget").val().trim() !== "" ||
+      $("#max-budget").val().trim() !== ""
+    ) {
+      $(".budget").removeClass("show-dropdown");
+    }
   });
 });

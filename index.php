@@ -20,7 +20,7 @@
    <div class="wrapper">
       <?php include 'include/header.php'; ?>
       <div class="heroBanner">
-         <div class="bannerContent">
+         <div class="bannerContent ">
             <h1 class="large_heading text-white letterSpace1 fontHeading fontWeight700">Your Dream Home, Your Dream Life
             </h1>
             <div class="tabForm">
@@ -53,26 +53,181 @@
                      <input type="text" name="city" placeholder="Add location..." />
                   </div>
                   <div class="propertyType">
-                     <!-- <p>Flat +1</p>
-                     <i class="fa fa-chevron-down"></i> -->
-                     <select name="" id="">
-                        <option value="">Property Type</option>
-                        <option value="">Property Type</option>
-                        <option value="">Property Type</option>
-                        <option value="">Property Type</option>
-                     </select>
+                     <p>Flat +1</p>
+                     <i class="fa fa-chevron-down"></i>
                   </div>
                   <div class="budgetFeild">
+                     <div class="budget-btn w-100 d-flex align-items-center justify-content-between">
+                        <p>Budget </p>
+                        <i class="fa fa-chevron-down"></i>
+                     </div>
 
-                     <p>Budget </p>
-                     <i class="fa fa-chevron-down"></i>
+
+                     <div class="budget ">
+                        <div class="overflow-hidden ">
+                           <div>
+                              <div class="d-flex  budget-inputs">
+                                 <div>
+                                    <input type="text " id="min-budget" name="min-budget" placeholder="Min">
+                                 </div>
+                                 <div>
+                                    <input type="text " id="max-budget" name="max-budget" placeholder="Max">
+                                 </div>
+                              </div>
+                              <div class="options">
+                                 <div class="min-budget-option ">
+                                    <p>Min</p>
+                                    <p data-value="1">₹ 1 </p>
+                                    <p data-value="2">₹ 2 </p>
+                                    <p data-value="3">₹ 3 </p>
+
+                                 </div>
+                                 <div class="max-budget-option text-end d-none">
+                                 <p>Max </p>
+                                    <p data-value="1">₹ 1 </p>
+                                    <p data-value="2">₹ 2 </p>
+                                    <p data-value="3">₹ 3 </p>
+                                 </div>
+                              </div>
+                           </div>
+
+                        </div>
+
+
+
+                     </div>
                   </div>
                   <div class="formBtn">
                      <button class="btnTheme w-100"><i class="fa fa-search"></i> Search</button>
                   </div>
                </div>
+               <div class="property-type-dropdown ">
+                  <div class="dropdown-inner-box">
+                     <div class="dropdown-inner-box-content">
+                        <div>
+                           <p class="title-dropdown residential_filter">Residential <i class="fa fa-chevron-down"></i>
+                           </p>
+                           <div class="residential_options ">
+                              <div class="dropdown-inner-box-content-options">
+                                 <div class="dropdown-inner-box-content-options">
+                                    <input type="checkbox" id="flat" name="property-type" value="flat">
+                                    <label for="flat">Flat</label>
+
+                                    <input type="checkbox" id="House" name="property-type" value="House">
+                                    <label for="House">House/Villa</label>
+
+                                 </div>
+
+                              </div>
+
+                           </div>
+                        </div>
+
+                        <p class="title-dropdown commercial_filter ">
+                           Commercial Properties <i class="fa fa-chevron-down"></i>
+                        </p>
+                        <div class="commercial_filter_option ">
+                           <div class="dropdown-inner-box-content-options ">
+                              <div class="dropdown-inner-box-content-options">
+                                 <input type="checkbox" id="office-space" name="property-type" value="office-space">
+                                 <label for="office-space">Office Space</label>
+
+                                 <input type="checkbox" id="shop-showroom" name="property-type" value="shop-showroom">
+                                 <label for="shop-showroom">Shop/Showroom</label>
+
+                                 <input type="checkbox" id="commercial-land" name="property-type"
+                                    value="commercial-land">
+                                 <label for="commercial-land">Commercial Land</label>
+
+                                 <input type="checkbox" id="coworking-space" name="property-type"
+                                    value="coworking-space">
+                                 <label for="coworking-space">Coworking Space</label>
+
+                                 <input type="checkbox" id="warehouse-godown" name="property-type"
+                                    value="warehouse-godown">
+                                 <label for="warehouse-godown">Warehouse/Godown</label>
+
+                                 <input type="checkbox" id="industrial-building" name="property-type"
+                                    value="industrial-building">
+                                 <label for="industrial-building">Industrial Building</label>
+
+                                 <input type="checkbox" id="industrial-shed" name="property-type"
+                                    value="industrial-shed">
+                                 <label for="industrial-shed">Industrial Shed</label>
+                              </div>
+
+                           </div>
+                           <div class="d-flex mt-3  size-box b ">
+                              <div class="items ">
+                                 <select name="" id="">
+                                    <option value="Sqft">Sqft</option>
+                                    <option value="Sqft">Sqyrd</option>
+                                    <option value="Sqft">Sqm</option>
+                                 </select>
+
+                              </div>
+                              <div class="items">
+                                 <p id="area_filter" class="d-flex justify-content-between align-items-center">
+                                    Area <i class="fa fa-chevron-down"></i>
+                                 </p>
+
+                                 <div class="price_filter">
+                                    <div class="overflow-hidden">
+                                       <div class="d-flex inner">
+                                          <select name="" id="">
+                                             <option value="Min">Min</option>
+                                             <option value="">100</option>
+                                             <option value="">100</option>
+                                             <option value="">100</option>
+                                          </select>
+                                          <select name="" id="">
+                                             <option value="Max">Max</option>
+                                             <option value="">100</option>
+                                             <option value="">100</option>
+                                             <option value="">100</option>
+                                          </select>
+
+                                       </div>
+
+
+                                    </div>
+
+                                 </div>
+
+                              </div>
+                              <div class="items ">
+
+                                 <input class="" type="text" placeholder="seats">
+
+                              </div>
+
+                           </div>
+                        </div>
+
+                        <div class="other-property-type">
+                           <p class="title-dropdown  other_properties_filter ">Other Property Type <i
+                                 class="fa fa-chevron-down"></i> </p>
+                           <div class="dropdown-inner-box-content-options other_properties_filter_option d-none">
+                              <div class="dropdown-inner-box-content-options">
+                                 <input type="checkbox" id="agriculture-land" name="agriculture-land" value="agriculture-land">
+                                 <label for="agriculture-land">Agriculture-land</label>
+
+                                 <input type="checkbox" id="agriculture-land2" name="property-type" value="agriculture-land2">
+                                 <label for="agriculture-land2">Agriculture-land</label>
+
+                              </div>
+
+                           </div>
+
+                        </div>
+                     </div>
+
+                  </div>
+
+               </div>
             </div>
          </div>
+
       </div>
       <section>
          <div class="containerFull">
@@ -157,9 +312,12 @@
                      </div>
                      <div class="rightBroke">
                         <h4 class="sub_heading my-4 fontHeading fontWeight600">Our Values Trust</h4>
-                        <p><strong>Reliable Brokerage Services:</strong> We believe in building up trust with our client
-                           through a strengthened relationship based on dependable and reliable brokerage services.</p>
-                        <p class="mt-3"><strong>Expert Guidance:</strong> Our clients repose faith in our expertise to
+                        <p><strong>Reliable Brokerage Services:</strong> We believe in building up trust with our
+                           client
+                           through a strengthened relationship based on dependable and reliable brokerage services.
+                        </p>
+                        <p class="mt-3"><strong>Expert Guidance:</strong> Our clients repose faith in our expertise
+                           to
                            guide them at every step of their real estate journey and make the right decisions.</p>
                         <p class="mt-3"><strong>Client-Centric Approach:</strong> We have our clients' needs and
                            aspirations foremost, and thus foster a trustworthy and supportive environment where their
@@ -175,9 +333,11 @@
                      </div>
                      <div class="rightBroke">
                         <h4 class="sub_heading my-4 fontHeading fontWeight600">Transparency</h4>
-                        <p><strong>Clear communication:</strong> We update the clients regarding every single update on
+                        <p><strong>Clear communication:</strong> We update the clients regarding every single update
+                           on
                            property listings, market trends, and transaction process in crystal-clear language.</p>
-                        <p class="mt-3"><strong>Thorough Documentation:</strong> We believe in transparent documentation
+                        <p class="mt-3"><strong>Thorough Documentation:</strong> We believe in transparent
+                           documentation
                            and reporting so that our clients should be completely aware of every detail pertaining to
                            their real estate transactions from the first consultation to the close.</p>
                         <p class="mt-3"><strong>Ethical Dealings:</strong> We deal with the best ethical standards to
@@ -194,10 +354,12 @@
                      </div>
                      <div class="rightBroke">
                         <h4 class="sub_heading my-4 fontHeading fontWeight600">Integrity</h4>
-                        <p><strong>Truthful Representations:</strong> We provide truthful and honest representations of
+                        <p><strong>Truthful Representations:</strong> We provide truthful and honest representations
+                           of
                            properties so that our clients have realistic expectations of what they are buying or
                            selling.</p>
-                        <p class="mt-3"><strong>Fair Negotiations:</strong> Our respect for integrity extends into our
+                        <p class="mt-3"><strong>Fair Negotiations:</strong> Our respect for integrity extends into
+                           our
                            negotiations. We encourage fair and ethical negotiation practices while zealously guarding
                            the best interest of our clients without selling our soul for it.</p>
                         <p class="mt-3"><strong>Leadership That Inspires Trust:</strong> The tone of integrity set by
@@ -220,11 +382,13 @@
                         <p class="mt-3"><strong>Transparent Reporting:</strong> It reports transparently on property
                            transactions, market conditions, and performance metrics, thus being accountable to the
                            client.</p>
-                        <p class="mt-3"><strong>Continuous Improvement:</strong> We review our performance regularly and
+                        <p class="mt-3"><strong>Continuous Improvement:</strong> We review our performance regularly
+                           and
                            actively seek feedback to constantly improve on the processes that will yield exceptional
                            results and client satisfaction.</p>
                         <p class="mt-3">For Urbanwalls Realty, trust, transparency, integrity, and accountability are
-                           not values; rather, they represent the very bedrock on which the entire business stands and
+                           not values; rather, they represent the very bedrock on which the entire business stands
+                           and
                            act as guiding principles that will lead to success in real estate brokerage business.</p>
                      </div>
                   </div>
@@ -243,7 +407,8 @@
       <section>
          <div class="containerFull">
             <div class="d-flex justify-content-between align-items-center">
-               <h4 class="heading fontHeading fontWeight600">Popular <span class="text_primary">Owner Properties</span>
+               <h4 class="heading fontHeading fontWeight600">Popular <span class="text_primary">Owner
+                     Properties</span>
                </h4>
                <a href="#" class="linkBtn">See all properties <i class="fa fa-arrow-right"></i></a>
             </div>
@@ -706,7 +871,8 @@
       <section>
          <div class="containerFull">
             <p class="textSub text-center">From The Blog</p>
-            <h3 class="heading text-center text_primary fontHeading fontWeight600">Latest News &<br /> Articles From the
+            <h3 class="heading text-center text_primary fontHeading fontWeight600">Latest News &<br /> Articles From
+               the
                Blog</h3>
             <div class="blogSlider iconSlider">
                <div class="itemBlog">
