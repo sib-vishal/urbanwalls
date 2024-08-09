@@ -298,7 +298,24 @@ $(document).ready(function () {
   });
 });
 
+$(document).ready(function () {
+  // Click event handler for tab items
+  $(".form-tabs li").click(function () {
+    var target = $(this).data("target");
+
+    if (target === "residential") {
+      $(".resdential-property ").removeClass("d-none");
+      $(".commercial-property").addClass("d-none");
+    } else if (target === "commercial") {
+      console.log("comm");
+      $(".commercial-property").removeClass("d-none");
+      $(".resdential-property ").addClass("d-none");
+    }
+  });
+});
+
 // home form
+
 $(document).ready(function () {
   $(".propertyType").click(function () {
     $(".property-type-dropdown").toggleClass("show-dropdown");
@@ -352,5 +369,18 @@ $(document).ready(function () {
     ) {
       $(".budget").removeClass("show-dropdown");
     }
+  });
+});
+
+// PROPERTY PAGE
+$(document).ready(function() {
+  $('input[name="property-type"]').on('change', function() {
+      if ($('#commercial').is(':checked')) {
+          $('.commercial_property').removeClass('d-none').addClass('d-block');
+          $('.residential_property').addClass('d-none')
+      } else {
+          $('.commercial_property').removeClass('d-block').addClass('d-none');
+          $('.residential_property').removeClass('d-none')
+      }
   });
 });

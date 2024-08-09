@@ -14,6 +14,40 @@
    <meta name="twitter:title" content="">
    <meta name="twitter:description" content="">
    <meta name="twitter:image" content="images/logo.png">
+
+   <script>
+      $(function () {
+         var mumbaiLocation = [
+            "Colaba",
+            "Marine Drive",
+            "Churchgate",
+            "Fort",
+            "Bandra",
+            "Juhu",
+            "Andheri",
+            "Malad",
+            "Powai",
+            "Ghatkopar",
+            "Kurla",
+            "Dadar",
+            "Thane",
+            "Mulund",
+            "Kalyan",
+            "Borivali",
+            "Dahisar",
+            "Lower Parel",
+            "Worli",
+            "Versova"
+         ];
+         $("#location").autocomplete({
+            source: mumbaiLocation
+         });
+      });
+   </script>
+
+
+
+
 </head>
 
 <body onload="createCaptcha();">
@@ -25,13 +59,27 @@
             </h1>
             <div class="tabForm">
                <ul class="form-tabs">
-                  <li class="active" data-target="buy">Buy</li>
-                  <li data-target="rent">Rent</li>
+                  <!-- <li class="active" data-target="buy">Buy</li> -->
+                  <li class="active" data-target="residential">Residential</li>
                   <li data-target="commercial">Commercial</li>
                </ul>
             </div>
             <div class="formBanner home-page ">
                <div class="formInline home-page">
+                  <div id="residential" class=" tab-content">
+                     <div class="">
+                        <div class="d-flex align-items-center lease-box">
+                           <i class="fa-solid fa-house"></i>
+                           <select name="" id="" class="border-0">
+
+                              <option value="buy">Buy</option>
+                              <option value="Rent">Rent</option>
+                           </select>
+                        </div>
+
+                     </div>
+
+                  </div>
                   <div id="commercial" class="d-none tab-content">
                      <div class="">
                         <div class="d-flex align-items-center lease-box">
@@ -46,14 +94,14 @@
                      </div>
 
                   </div>
-                  <div class="locationFeild">
-                     <div class="tagLocation">
-                        Mumbai
-                     </div>
-                     <input type="text" name="city" placeholder="Add location..." />
+
+                  <div class="locationFeild ui-widget ">
+                     <i class="fa-solid fa-location-dot"></i>
+                     <input class="" id="location" type="text" name="city" placeholder="Add location..." />
                   </div>
+
                   <div class="propertyType">
-                     <p>Flat +1</p>
+                     <p>Property Type</p>
                      <i class="fa fa-chevron-down"></i>
                   </div>
                   <div class="budgetFeild">
@@ -77,16 +125,20 @@
                               <div class="options">
                                  <div class="min-budget-option ">
                                     <p>Min</p>
-                                    <p data-value="1">₹ 1 </p>
-                                    <p data-value="2">₹ 2 </p>
-                                    <p data-value="3">₹ 3 </p>
+                                    <p data-value="5000">₹ 5000 </p>
+                                    <p data-value="20000">₹20000 </p>
+                                    <p data-value="60000">₹ 60000 </p>
+                                    <p data-value="100000">₹ 100000 </p>
+                                    <p data-value="500000">₹ 500000 </p>
 
                                  </div>
                                  <div class="max-budget-option text-end d-none">
-                                 <p>Max </p>
-                                    <p data-value="1">₹ 1 </p>
-                                    <p data-value="2">₹ 2 </p>
-                                    <p data-value="3">₹ 3 </p>
+                                    <p>Max </p>
+                                    <p data-value="20000">₹ 20000 </p>
+                                    <p data-value="60000">₹ 60000 </p>
+                                    <p data-value="100000">₹ 100000 </p>
+                                    <p data-value="500000">₹ 500000 </p>
+                                    <p data-value="1000000">₹ 1000000 </p>
                                  </div>
                               </div>
                            </div>
@@ -104,7 +156,7 @@
                <div class="property-type-dropdown ">
                   <div class="dropdown-inner-box">
                      <div class="dropdown-inner-box-content">
-                        <div>
+                        <div class="resdential-property  ">
                            <p class="title-dropdown residential_filter">Residential <i class="fa fa-chevron-down"></i>
                            </p>
                            <div class="residential_options ">
@@ -122,42 +174,43 @@
 
                            </div>
                         </div>
+                        <div class="commercial-property d-none">
+                           <p class="title-dropdown commercial_filter ">
+                              Commercial Properties <i class="fa fa-chevron-down"></i>
+                           </p>
+                           <div class="commercial_filter_option ">
+                              <div class="dropdown-inner-box-content-options ">
+                                 <div class="dropdown-inner-box-content-options">
+                                    <input type="checkbox" id="office-space" name="property-type" value="office-space">
+                                    <label for="office-space">Office Space</label>
 
-                        <p class="title-dropdown commercial_filter ">
-                           Commercial Properties <i class="fa fa-chevron-down"></i>
-                        </p>
-                        <div class="commercial_filter_option ">
-                           <div class="dropdown-inner-box-content-options ">
-                              <div class="dropdown-inner-box-content-options">
-                                 <input type="checkbox" id="office-space" name="property-type" value="office-space">
-                                 <label for="office-space">Office Space</label>
+                                    <input type="checkbox" id="shop-showroom" name="property-type"
+                                       value="shop-showroom">
+                                    <label for="shop-showroom">Shop/Showroom</label>
 
-                                 <input type="checkbox" id="shop-showroom" name="property-type" value="shop-showroom">
-                                 <label for="shop-showroom">Shop/Showroom</label>
+                                    <!-- <input type="checkbox" id="commercial-land" name="property-type"
+                                       value="commercial-land">
+                                    <label for="commercial-land">Commercial Land</label> -->
 
-                                 <input type="checkbox" id="commercial-land" name="property-type"
-                                    value="commercial-land">
-                                 <label for="commercial-land">Commercial Land</label>
+                                    <!-- <input type="checkbox" id="coworking-space" name="property-type"
+                                       value="coworking-space">
+                                    <label for="coworking-space">Coworking Space</label> -->
 
-                                 <input type="checkbox" id="coworking-space" name="property-type"
-                                    value="coworking-space">
-                                 <label for="coworking-space">Coworking Space</label>
+                                    <input type="checkbox" id="warehouse-godown" name="property-type"
+                                       value="warehouse-godown">
+                                    <label for="warehouse-godown">Warehouse/Godown</label>
+<!-- 
+                                    <input type="checkbox" id="industrial-building" name="property-type"
+                                       value="industrial-building">
+                                    <label for="industrial-building">Industrial Building</label>
 
-                                 <input type="checkbox" id="warehouse-godown" name="property-type"
-                                    value="warehouse-godown">
-                                 <label for="warehouse-godown">Warehouse/Godown</label>
+                                    <input type="checkbox" id="industrial-shed" name="property-type"
+                                       value="industrial-shed">
+                                    <label for="industrial-shed">Industrial Shed</label> -->
+                                 </div>
 
-                                 <input type="checkbox" id="industrial-building" name="property-type"
-                                    value="industrial-building">
-                                 <label for="industrial-building">Industrial Building</label>
-
-                                 <input type="checkbox" id="industrial-shed" name="property-type"
-                                    value="industrial-shed">
-                                 <label for="industrial-shed">Industrial Shed</label>
                               </div>
-
-                           </div>
-                           <div class="d-flex mt-3  size-box b ">
+                              <!-- <div class="d-flex mt-3  size-box b ">
                               <div class="items ">
                                  <select name="" id="">
                                     <option value="Sqft">Sqft</option>
@@ -201,25 +254,28 @@
 
                               </div>
 
+                           </div> -->
                            </div>
                         </div>
 
-                        <div class="other-property-type">
+                        <!-- <div class="other-property-type">
                            <p class="title-dropdown  other_properties_filter ">Other Property Type <i
                                  class="fa fa-chevron-down"></i> </p>
                            <div class="dropdown-inner-box-content-options other_properties_filter_option d-none">
                               <div class="dropdown-inner-box-content-options">
-                                 <input type="checkbox" id="agriculture-land" name="agriculture-land" value="agriculture-land">
+                                 <input type="checkbox" id="agriculture-land" name="agriculture-land"
+                                    value="agriculture-land">
                                  <label for="agriculture-land">Agriculture-land</label>
 
-                                 <input type="checkbox" id="agriculture-land2" name="property-type" value="agriculture-land2">
+                                 <input type="checkbox" id="agriculture-land2" name="property-type"
+                                    value="agriculture-land2">
                                  <label for="agriculture-land2">Agriculture-land</label>
 
                               </div>
 
                            </div>
 
-                        </div>
+                        </div> -->
                      </div>
 
                   </div>

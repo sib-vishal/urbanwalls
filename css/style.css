@@ -466,14 +466,22 @@ section {
   }
   .budgetFeild {
     /* width: 200px; */
-    display: flex;
-    justify-content: space-between;
+    /* display: flex;
+    justify-content: space-between; */
     padding: 10px 10px;
     /* padding-left: 50px; */
     position: relative;
   }
   .budgetFeild p i {
     margin-right: 5px;
+  }
+  .max-budget,.min-budget{
+    display: flex;
+  }
+  .max-budget select,.min-budget select {
+    border: none;
+    width: 100%;
+    color: var(--grey-color);
   }
   /* .budgetFeild:before{
   content: "\e1bc";
@@ -1487,12 +1495,16 @@ input[type="range"]::-moz-range-thumb {
   }
   .locationFeild {
     display: flex;
+    align-items: center;
     padding-left: 30px;
     position: relative;
     border-right: 1px solid #b6b6b6;
-    width: 350px;
+    width: 270px;
   }
-  .tagLocation:after {
+  .locationFeild i {
+    color: var(--primary-color);
+  }
+  /* .tagLocation:after {
     content: "\f3c5";
     position: absolute;
     font-family: var(--fa-style-family, "Font Awesome 6 Free");
@@ -1500,7 +1512,7 @@ input[type="range"]::-moz-range-thumb {
     left: 8px;
     color: var(--primary-color);
     font-size: 17px;
-  }
+  } */
   .locationFeild input {
     margin-left: 15px;
     border: none;
@@ -1573,10 +1585,9 @@ input[type="range"]::-moz-range-thumb {
 .property-type-dropdown {
   position: absolute;
   background: #fff;
-
   display: grid;
   grid-template-rows: 0fr;
-  width: 600px;
+  width: 400px;
   left: 39%;
   /* transform: translateX(calc(100% - 610px)); */
   transition: all 0.3s ease-in-out;
@@ -1706,3 +1717,56 @@ input[type="range"]::-moz-range-thumb {
     }
   }
 }
+
+.property-enquiry-form .formInline .main_filter {
+  background-color: #e0e0e0;
+  display: flex;
+}
+.property-enquiry-form .formInline .main_filter label {
+  display: block;
+  width: 50%;
+  position: relative;
+  padding: 10px;
+  text-align: center;
+  color: #fff;
+}
+.property-enquiry-form .formInline .main_filter input {
+  position: absolute;
+  visibility: hidden;
+}
+.property-enquiry-form .formInline .main_filter input:checked + label {
+  background-color: var(--primary-color) !important;
+  color: #fff;
+}
+.property-enquiry-form .formInline .main_filter input + label {
+  color: #000;
+}
+.propertyType1 {
+  margin-top: 10px;
+}
+.propertyType1 p {
+  font-weight: 600;
+  color: var(--grey-color);
+}
+.propertyType1 label {
+  font-size: 12px;
+  padding: 5px 10px;
+  border: 1px solid var(--grey-color);
+  border-radius: 15px;
+  color: var(--grey-color);
+  cursor: pointer;
+}
+.propertyType1 input {
+  position: absolute;
+  opacity: 0;
+}
+.propertyType1 input:checked + label {
+  border-color: var(--primary-color) !important;
+  color: var(--primary-color);
+}
+
+/* #residential:checked  */
+.commercial_property label{
+  margin-top: 4px;
+}
+

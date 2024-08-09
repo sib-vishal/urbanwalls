@@ -14,6 +14,7 @@
     <meta name="twitter:title" content="">
     <meta name="twitter:description" content="">
     <meta name="twitter:image" content="images/logo.png">
+
     <style>
         .header {
             position: inherit;
@@ -37,6 +38,37 @@
             color: #444;
         }
     </style>
+
+    <script>
+        $(function () {
+            var mumbaiLocation = [
+                "Colaba",
+                "Marine Drive",
+                "Churchgate",
+                "Fort",
+                "Bandra",
+                "Juhu",
+                "Andheri",
+                "Malad",
+                "Powai",
+                "Ghatkopar",
+                "Kurla",
+                "Dadar",
+                "Thane",
+                "Mulund",
+                "Kalyan",
+                "Borivali",
+                "Dahisar",
+                "Lower Parel",
+                "Worli",
+                "Versova"
+            ];
+            $("#location").autocomplete({
+                source: mumbaiLocation
+            });
+        });
+    </script>
+
 </head>
 
 <body onload="createCaptcha();">
@@ -80,22 +112,79 @@
                             </div>
                             <div class="property-enquiry-form">
                                 <div class="formInline">
-                                    <div class="locationFeild ">
+                                    <div class="main_filter">
+                                        <input id="residential" type="radio" name="property-type" checked>
+                                        <label for="residential">
+                                            Residential
+                                        </label>
+                                        <input id="commercial" type="radio" name="property-type">
+                                        <label for="commercial">
+                                            Commercial
+                                        </label>
+                                    </div>
+
+                                    <div class="locationFeild ui-widget mt-2">
                                         <i class="fa-solid fa-location-dot"></i>
 
                                         <!-- <div class="tagLocation">
                                             Mumbai
                                         </div> -->
-                                        <input type="text" name="city" placeholder="Add location...">
+                                        <input id="location" type="text" name="city" placeholder="Add location...">
                                     </div>
-                                    <div class="propertyType">
-                                        <p><i class="fa-solid fa-house"></i> Flat +1</p>
-                                        <i class="fa fa-chevron-down"></i>
+                                    <div class="propertyType1">
+                                        <p class="fontHeading">Property Type</p>
+                                        <!-- <p><i class="fa-solid fa-house"></i>Property Type</p>
+                                        <i class="fa fa-chevron-down"></i> -->
+                                        <div class="residential_property mt-2">
+                                            <input type="checkbox" id="flat" name="property-type" value="flat">
+                                            <label for="flat">Flat</label>
+
+                                            <input type="checkbox" id="House" name="property-type" value="House">
+                                            <label for="House">House/Villa</label>
+
+                                        </div>
+                                        <div class="commercial_property d-none mt-2">
+
+                                            <input type="checkbox" id="office-space" name="property-type"
+                                                value="office-space">
+                                            <label for="office-space">Office Space</label>
+
+                                            <input type="checkbox" id="shop-showroom" name="property-type"
+                                                value="shop-showroom">
+                                            <label for="shop-showroom">Shop/Showroom</label>
+                                            <input type="checkbox" id="warehouse-godown" name="property-type"
+                                                value="warehouse-godown">
+                                            <label for="warehouse-godown">Warehouse/Godown</label>
+                                        </div>
+                                        <hr class="mt-3 mb-0">
+
                                     </div>
                                     <div class="budgetFeild">
 
                                         <p><i class="fa-solid fa-indian-rupee-sign"></i> Budget </p>
-                                        <i class="fa fa-chevron-down"></i>
+                                        <!-- <i class="fa fa-chevron-down"></i> -->
+                                        <div class="min-budget mt-2">
+                                            <p>Min. </p>
+                                            <select name="" id="">
+                                                <option value="" disabled selected> select</option>
+                                                <option value="5000"> ₹ 5000</option>
+                                                <option value="20000"> ₹ 20000</option>
+                                                <option value="50000"> ₹ 50000</option>
+                                                <option value="100000"> ₹ 100000</option>
+                                                <option value="500000"> ₹ 500000</option>
+                                            </select>
+                                        </div>
+                                        <div class="max-budget">
+                                            <p>Max. </p>
+                                            <select name="" id="">  
+                                            <option value="" disabled selected> select</option>
+                                                <option value="5000"> ₹ 5000</option>
+                                                <option value="20000"> ₹ 20000</option>
+                                                <option value="50000"> ₹ 50000</option>
+                                                <option value="100000"> ₹ 100000</option>
+                                                <option value="500000"> ₹ 500000</option>
+                                            </select>
+                                        </div>
                                     </div>
                                     <div class="formBtn w-100 mt-2">
                                         <button class="btnTheme btnfull w-100"><i class="fa fa-search"></i>
@@ -109,7 +198,7 @@
                             </div>
                             <div class="filterItem mt-lg-4 mt-3">
                                 <div class="filterHeader d-flex align-items-center justify-content-between">
-                                    <h5 class="title fontHeading">BHK Type</h5>
+                                    <h5 class="title fontHeading">No. of Bedroom</h5>
                                     <button class="iconBtn"><i class="bi bi-arrow-clockwise"></i> Reset</button>
                                 </div>
 
@@ -144,7 +233,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="filterItem mt-lg-4 mt-3 mb-4">
+                            <!-- <div class="filterItem mt-lg-4 mt-3 mb-4">
                                 <div class="filterHeader mb-4 d-flex align-items-center justify-content-between">
                                     <h5 class="title fontHeading">Price Range </h5>
                                     <div class="price-input">
@@ -167,7 +256,7 @@
                                     <input type="range" class="range-min" min="0" max="10000" value="2500" step="100">
                                     <input type="range" class="range-max" min="0" max="10000" value="7500" step="100">
                                 </div>
-                            </div>
+                            </div> -->
                             <div class="filterItem mt-lg-4 mt-3">
                                 <div class="filterHeader d-flex align-items-center justify-content-between">
                                     <h5 class="title fontHeading">Availability</h5>
@@ -369,16 +458,16 @@
                                                     <h4 class="small_heading text-black fontWeight600">₹7,800</h4>
                                                     <p class="textGrey">Security Deposit</p>
                                                 </div>
-                                                <div class="btnColor">Contact Agent</div>
+                                                <div class="btnColor text-center">Know More</div>
                                             </div>
                                         </div>
                                     </div>
                                 </a>
-                                <hr />
+                                <!-- <hr />
                                 <p class="mt-2"><small>For rent 1 room set in rwa Munirka in 3rd floor 1 bedroom 1
                                         bathroom with 1 kitchen separate newly renovated and area 250sq ft. gated
                                         society and valiance free environment site available in good location.Contact
-                                        Munirka properties pvt. ltd. </small></p>
+                                        Munirka properties pvt. ltd. </small></p> -->
                             </div>
                             <div class="propertItem">
                                 <a href="#">
@@ -436,16 +525,16 @@
                                                     <h4 class="small_heading text-black fontWeight600">₹7,800</h4>
                                                     <p class="textGrey">Security Deposit</p>
                                                 </div>
-                                                <div class="btnColor">Contact Agent</div>
+                                                <div class="btnColor text-center">Know More</div>
                                             </div>
                                         </div>
                                     </div>
                                 </a>
-                                <hr />
+                                <!-- <hr />
                                 <p class="mt-2"><small>For rent 1 room set in rwa Munirka in 3rd floor 1 bedroom 1
                                         bathroom with 1 kitchen separate newly renovated and area 250sq ft. gated
                                         society and valiance free environment site available in good location.Contact
-                                        Munirka properties pvt. ltd. </small></p>
+                                        Munirka properties pvt. ltd. </small></p> -->
                             </div>
                             <div class="propertItem">
                                 <a href="#">
@@ -503,16 +592,16 @@
                                                     <h4 class="small_heading text-black fontWeight600">₹7,800</h4>
                                                     <p class="textGrey">Security Deposit</p>
                                                 </div>
-                                                <div class="btnColor">Contact Agent</div>
+                                                <div class="btnColor text-center">Know More</div>
                                             </div>
                                         </div>
                                     </div>
                                 </a>
-                                <hr />
+                                <!-- <hr />
                                 <p class="mt-2"><small>For rent 1 room set in rwa Munirka in 3rd floor 1 bedroom 1
                                         bathroom with 1 kitchen separate newly renovated and area 250sq ft. gated
                                         society and valiance free environment site available in good location.Contact
-                                        Munirka properties pvt. ltd. </small></p>
+                                        Munirka properties pvt. ltd. </small></p> -->
                             </div>
                             <div class="propertItem">
                                 <a href="#">
@@ -570,16 +659,16 @@
                                                     <h4 class="small_heading text-black fontWeight600">₹7,800</h4>
                                                     <p class="textGrey">Security Deposit</p>
                                                 </div>
-                                                <div class="btnColor">Contact Agent</div>
+                                                <div class="btnColor text-center">Know More</div>
                                             </div>
                                         </div>
                                     </div>
                                 </a>
-                                <hr />
+                                <!-- <hr />
                                 <p class="mt-2"><small>For rent 1 room set in rwa Munirka in 3rd floor 1 bedroom 1
                                         bathroom with 1 kitchen separate newly renovated and area 250sq ft. gated
                                         society and valiance free environment site available in good location.Contact
-                                        Munirka properties pvt. ltd. </small></p>
+                                        Munirka properties pvt. ltd. </small></p> -->
                             </div>
                             <div class="propertItem">
                                 <a href="#">
@@ -637,16 +726,16 @@
                                                     <h4 class="small_heading text-black fontWeight600">₹7,800</h4>
                                                     <p class="textGrey">Security Deposit</p>
                                                 </div>
-                                                <div class="btnColor">Contact Agent</div>
+                                                <div class="btnColor text-center">Know More</div>
                                             </div>
                                         </div>
                                     </div>
                                 </a>
-                                <hr />
+                                <!-- <hr />
                                 <p class="mt-2"><small>For rent 1 room set in rwa Munirka in 3rd floor 1 bedroom 1
                                         bathroom with 1 kitchen separate newly renovated and area 250sq ft. gated
                                         society and valiance free environment site available in good location.Contact
-                                        Munirka properties pvt. ltd. </small></p>
+                                        Munirka properties pvt. ltd. </small></p> -->
                             </div>
                         </div>
                     </div>
